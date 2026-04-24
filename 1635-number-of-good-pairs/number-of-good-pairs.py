@@ -4,9 +4,9 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        out=0
+        out=[]
         for i in range(len(nums)):
             for j in range(i+1,len(nums)):
                 if nums[i]==nums[j]:
-                    out+=1
-        return out
+                    out.append((i,j))
+        return len(out)
