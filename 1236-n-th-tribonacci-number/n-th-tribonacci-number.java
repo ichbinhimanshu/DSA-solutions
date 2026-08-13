@@ -3,24 +3,22 @@ class Solution {
         if(n==0){
             return 0;
         }
-        if(n==1){
-            return 1;
-        }
-        if(n==2){
+        if((n==1)||(n==2)){
             return 1;
         }
         else{
-            int f=0;
-            int s=1;
-            int t=1;
-
-            for(int i=n;i>0;i--){
-                int forth = f+s+t;
-                f=s;
-                s=t;
-                t=forth;
+            int first = 0;
+            int second = 1;
+            int third = 1;
+            int forth =0;
+            
+            for(int i=3;i<=n;i++){
+                forth = first+second+third;
+                first=second;
+                second=third;
+                third=forth;
             }
-            return f;
+            return forth;
         }
     }
 }
