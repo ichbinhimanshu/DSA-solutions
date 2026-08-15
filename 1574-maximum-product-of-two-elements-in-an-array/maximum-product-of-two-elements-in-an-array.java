@@ -1,8 +1,25 @@
-import java.util.*;
 class Solution {
     public int maxProduct(int[] nums) {
-        Arrays.sort(nums);
-        int n=nums.length;
-        return (nums[n-1]-1)*(nums[n-2]-1);
+        int max=-1;
+        int smax=-1;
+        for(int i=0;i<nums.length;i++){
+            if(nums[i]>=max){
+                smax=max;
+                max=nums[i];
+            }
+            else if(nums[i]>=smax){
+                smax=nums[i];
+            }
+        }
+        return (max-1)*(smax-1);
     }
 }
+
+// import java.util.*;
+// class Solution {
+//     public int maxProduct(int[] nums) {
+//         Arrays.sort(nums);
+//         int n=nums.length;
+//         return (nums[n-1]-1)*(nums[n-2]-1);
+//     }
+// }
