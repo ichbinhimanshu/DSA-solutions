@@ -17,19 +17,32 @@
 //     }
 // }
 
+// import java.util.*;
+// class Solution {
+//     public boolean containsDuplicate(int[] nums) {
+//         HashMap<Integer,Integer> count = new HashMap<>();
+
+//         for(int i=0;i<nums.length;i++){
+//             if(count.containsKey(nums[i])){
+//                 return true;
+//             }
+//             else{
+//                 count.put(nums[i],i);
+//             }
+//         }
+//         return false;
+//     }
+// }
+
+
 import java.util.*;
 class Solution {
     public boolean containsDuplicate(int[] nums) {
-        HashMap<Integer,Integer> count = new HashMap<>();
-
+        HashSet<Integer> ans = new HashSet<>();
         for(int i=0;i<nums.length;i++){
-            if(count.containsKey(nums[i])){
-                return true;
-            }
-            else{
-                count.put(nums[i],i);
-            }
+            ans.add(nums[i]);
         }
-        return false;
+        return ans.size()!=nums.length;
+
     }
 }
