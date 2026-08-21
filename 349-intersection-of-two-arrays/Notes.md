@@ -1,1 +1,1 @@
-<h2>intersection-of-two-arrays Notes</h2><hr>[ Time taken: 22m 47s ]
+<h2>intersection-of-two-arrays Notes</h2><hr>[ Time taken: 21m 45s ]
