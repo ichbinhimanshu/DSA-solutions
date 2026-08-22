@@ -16,8 +16,15 @@ class Solution {
         }
 
         
-        for(int key : ans.keySet()){
-            if(key==ans.get(key)){
+        // for(int key : ans.keySet()){
+        //     if(key==ans.get(key)){
+        //         if(key>Lucky){
+        //             Lucky = key;
+        //         }
+        //     }
+        // }
+        for(Integer key : ans.keySet()){
+            if(key.equals(ans.get(key))){
                 if(key>Lucky){
                     Lucky = key;
                 }
