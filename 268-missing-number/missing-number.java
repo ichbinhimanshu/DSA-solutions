@@ -1,11 +1,14 @@
 class Solution {
     public int missingNumber(int[] nums) {
-        int n=nums.length;
-        int sum=(n*(n+1))/2;
-        int tempsum=0;
+        int n = nums.length;
+        int sum = (n*(n+1))/2;
+        int arrsum = 0;
+
         for(int i=0;i<n;i++){
-            tempsum=tempsum+nums[i];
+            arrsum=arrsum+nums[i];
         }
-        return sum-tempsum;
+
+        int result = sum-arrsum;
+        return result;
     }
 }
