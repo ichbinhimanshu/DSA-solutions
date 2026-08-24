@@ -8,14 +8,14 @@ class Solution {
             if(nums[i]<nums[i+1]){
                 i++;
                 check1 = check1 + nums[i];
+
+                if(check1>check2){
+                    check2 = check1;
+                }
             }
             else{
                 i++;
                 check1 = nums[i];
-            }
-
-            if(check1 > check2){
-                check2 = check1;
             }
         }
         return check2;
