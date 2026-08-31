@@ -11,10 +11,10 @@ class Solution {
                 sumx=sumx-1;
             }
             if(i=='L'){
-                sumy=sumy+2;
+                sumy=sumy+1;
             }
             if(i=='R'){
-                sumy=sumy-2;
+                sumy=sumy-1;
             }
         }
         return (sumx == 0 && sumy==0);
