@@ -14,18 +14,11 @@ class MinStack {
         st.push(value);
     }
     
-    // public void pop() {
-    //     if(st.peek().equals(min.peek())){     //give error in == so use isequal
-    //         min.pop();
-    //     }
-    //     st.pop();
-    // }
     public void pop() {
-        int e1 = st.pop();
-        int e2 = min.peek();
-        if(e1 == e2){
+        if(st.peek().equals(min.peek())){     //give error in == so use isequal
             min.pop();
         }
+        st.pop();
     }
     
     public int top() {
