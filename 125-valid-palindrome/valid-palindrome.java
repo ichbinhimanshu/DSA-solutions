@@ -8,10 +8,19 @@ class Solution {
                 sb1.append(Character.toLowerCase(i));
             }
         }
-        
-        StringBuilder sb2 = new StringBuilder(sb1);
-        sb2.reverse();
 
-        return sb2.toString().equals(sb1.toString());
+        int i=0;
+        int j=sb1.length()-1;
+        while(i<=j){
+            if(sb1.charAt(i)==sb1.charAt(j)){
+                i++;
+                j--;
+            }
+            else{
+                return false;
+            }
+            
+        }
+        return true;
     }
 }
