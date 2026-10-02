@@ -19,13 +19,8 @@ class Solution {
             count++;
             p=p.next;
         }
-        int run = 0;
-        if(count%2==0){
-            run=count/2 -1;
-        }
-        else{
-            run=count/2-1;
-        }
+        int run = count/2 -1;
+        
         ListNode p2=head;
 
         for(int i=0;i<run;i++){
