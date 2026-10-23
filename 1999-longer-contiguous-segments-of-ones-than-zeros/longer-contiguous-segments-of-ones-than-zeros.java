@@ -5,7 +5,6 @@ class Solution {
         int zero = 0;
         int max1 = 0;
         int max0 = 0;
-        boolean ans = false ;
 
         while(i<s.length()){
             if(s.charAt(i)=='1'){
