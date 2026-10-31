@@ -28,6 +28,6 @@ class Solution {
                 return key;
             }
         }
-        return 'H';
+        return ' ';
     }
 }
