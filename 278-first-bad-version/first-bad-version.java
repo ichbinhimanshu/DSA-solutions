@@ -10,7 +10,7 @@ public class Solution extends VersionControl {
             if(isBadVersion(mid)){
                 last = mid;
             }
-            else if(!isBadVersion(mid)){
+            else{
                 first = mid+1;
             }
         }
